@@ -1,16 +1,17 @@
-React Ders Notları
+#React Ders Notları
 Bu repository, React Vite derslerimizde işlediğimiz konuları ve projeleri toparlayan bir kaynak olarak hazırlanmıştır. Dersler hafta hafta işlenmiş olup, her bir hafta içinde işlenen konuların kod örneklerine, açıklamalarına ve dokümantasyonuna ulaşabilirsiniz. Bu sayede öğrencilerimiz, işlenen dersleri tekrar edebilir ve kodlar üzerinde kendi çalışmalarıyla pratik yapabilirler.
 
-İçindekiler
-Genel Bilgiler
-Kurulum ve Çalıştırma
-Hafta Hafta Ders İçeriği
-Hafta 1: React Giriş ve Kurulum
-Hafta 2: JSX ve Bileşenler
-Hafta 3: Props ve State Yönetimi
-Hafta 4: React Router ve Dinamik Yönlendirme
-Katkıda Bulunma
-Genel Bilgiler
+#İçindekiler
+##Genel Bilgiler
+###Kurulum ve Çalıştırma
+###Hafta Hafta Ders İçeriği
+###Hafta 1: React Giriş ve Kurulum
+###Hafta 2: JSX ve Bileşenler
+###Hafta 3: Props ve State Yönetimi
+###Hafta 4: React Router ve Dinamik Yönlendirme
+###Katkıda Bulunma
+
+#Genel Bilgiler
 Bu repository, derslerde üzerinde çalıştığımız kodların yanı sıra ek dokümantasyon ve açıklamalar içermektedir. Her hafta işlediğimiz konuları tekrar gözden geçirmek ve daha derinlemesine anlamak için kullanabilirsiniz.
 
 React Sürümü: 18.x
