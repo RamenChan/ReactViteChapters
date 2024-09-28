@@ -8,12 +8,12 @@ function Product() {
     //html kodları yazılır.
     <div>
         {
-            catagories.map((product,index) => {
+            catagories.map((product, index) => (
                 <div key={index}> {product} </div>    
-            }            
-            )
+            ))
         }
     </div>
+    
   )
 }
 
