@@ -1,6 +1,11 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+İkinci hafta 3. ve 4. dersimiz de başladığımız vite framework girişi.
+işlenen konular 
+  * component
+    * içiçe component
+    * mapleme
+    * children 
 
 Currently, two official plugins are available:
 
