@@ -84,5 +84,9 @@ Repository'ye katkıda bulunmak isterseniz, şu adımları takip edebilirsiniz:
 
 
 ##Yazarlar
+
 Bekiralp Zengin
+
 Kemal özcan
+
+Abdi Yıldızoğlu
