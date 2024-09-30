@@ -10,6 +10,7 @@ import Footer from './Footer'
 import Example from './onePage'
 import Banner from './Banner'
 import Banner2 from './Banner2'
+import Category from './Category'
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
         <Header/>
         <Banner/>
         <Banner2/>
+        <Category/>
     </div>
   )
 }
