@@ -1,38 +1,42 @@
-.banner2{
+.banner2 {
     width: 100%;
     height: 600px;
-    background-color: red;
     position: absolute;
     top: 722px;
     display: flex;
     flex-direction: row;
 }
-.leftbanner2{
+
+.leftbanner2 {
     width: 50%;
     height: 600px;
-    background-color: red;
 
 }
-.playstation{
+
+.playstation {
     height: 328px;
     background-color: white;
     display: flex;
 }
-.apple{
+
+.apple {
     height: 272px;
     background-color: grey;
+    display: flex;
+    flex-direction: row;
 }
 
-.playstation h2{
+.playstation h2 {
     font-family: SF Pro Display;
-font-size: 49px;
-font-weight: 500;
-line-height: 40px;
-margin-bottom: 20px;
-text-align: left;
+    font-size: 49px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-align: left;
     color: black;
 }
-.playstation h1{
+
+.playstation h1 {
     font-family: SF Pro Display;
     font-size: 14px;
     font-weight: 500;
@@ -41,46 +45,113 @@ text-align: left;
     margin-top: 0px;
     color: #909090;
 }
-.playstation-text{
+
+.playstation-text {
     display: flex;
     flex-direction: column;
-justify-content: center;
-text-align: center;
-margin-left: 50px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
 }
-.macbook{
+
+.macbook {
     width: 50%;
     height: auto;
     background-color: #EDEDED;
-display: flex;
+    display: flex;
 }
-.macbook h2{
+
+.macbook h2 {
     font-family: SF Pro Display;
-font-size: 64px;
-font-weight: 200;
-line-height: 56px;
-text-align: left;
-color: black;
-margin-bottom: 10px;
+    font-size: 64px;
+    font-weight: 200;
+    line-height: 56px;
+    text-align: left;
+    color: black;
+    margin-bottom: 10px;
 
 }
-.macbook h1{
+
+.macbook h1 {
     font-family: SF Pro Display;
-font-size: 14px;
-font-weight: 500;
-line-height: 24px;
-text-align: left;
-color:  #909090;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #909090;
 
 }
-.macbook img{
+
+.macbook img {
     margin-left: auto;
     max-height: 80%;
     margin-top: 60px
 }
-.macbook button{
+
+.macbook button {
     width: 184px;
     background-color: #EDEDED;
     color: black;
     border: 2px solid black;
 }
+
+.headset {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    background-color: #EDEDED;
+}
+
+.headset-text {
+    font-size: 29px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: left;
+    color: black;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.ap{
+    margin-bottom: 0px;
+}
+
+.p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #909090;
+
+}
+
+.vr{
+    width: 50%;
+    background-color: #353535;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.vr-text{
+    font-size: 29px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.abdi{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #909090;
+    margin-bottom: 45px;
+}
+.vision{
+    margin-top: 0px;
+}
+
+

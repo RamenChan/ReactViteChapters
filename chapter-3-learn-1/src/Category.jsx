@@ -26,7 +26,7 @@ function Category() {
             <button ><img src={camera} alt="" />  </button>
             <button ><img src={headphones} alt="" />  </button>
             <button ><img src={computers} alt="" />  </button>
-            <button >i<img src={gaming} alt="" />  </button>
+            <button ><img src={gaming} alt="" />  </button>
         </div>
         
         
