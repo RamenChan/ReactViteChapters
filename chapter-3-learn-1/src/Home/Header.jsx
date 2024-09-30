@@ -1,9 +1,9 @@
 import React from 'react'
 import './Header.css'
-import Logo from "./image/Logo.png"
-import cart from "./image/Favorites.png"
-import favorites from "./image/Cart1.png"
-import user from "./image/User.png"
+import Logo from "../image/Logo.png"
+import cart from "../image/Favorites.png"
+import favorites from "../image/Cart1.png"
+import user from "../image/User.png"
 
 
 

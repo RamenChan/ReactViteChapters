@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Banner2.css"
-import PlayStation from "./image/PlayStation.png"
-import macbook from "./image/MacBook.png"
-import headphone from "./image/headphonehalf.png"
-import vr from "./image/Vr.png"
+import PlayStation from "../image/PlayStation.png"
+import macbook from "../image/MacBook.png"
+import headphone from "../image/headphonehalf.png"
+import vr from "../image/Vr.png"
 
 function Banner2() {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Banner.css'
-import iphone from "./image/iphoneImage.png"
+import iphone from "../image/iphoneImage.png"
 
 function Banner() {
   return (

@@ -1,8 +1,6 @@
 .banner2 {
     width: 100%;
     height: 600px;
-    position: absolute;
-    top: 722px;
     display: flex;
     flex-direction: row;
 }

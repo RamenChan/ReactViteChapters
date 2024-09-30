@@ -4,9 +4,7 @@
   height: 600px;
   top: 1320px;
   left: 0px;
-
   background-color: #FAFAFA;
-  ;
 }
 .category h1{
 font-family: SF Pro Display;
@@ -15,8 +13,6 @@ font-weight: 500;
 line-height: 32px;
 letter-spacing: 0.01em;
 text-align: left;
-
-
 }
 .browse{
     width: 1120px;
@@ -27,9 +23,6 @@ text-align: left;
     margin-top: 80px;
     margin-left: 350px;
     color: black;
-    
-    
-
 }
 .browse img{
     width: 80px;

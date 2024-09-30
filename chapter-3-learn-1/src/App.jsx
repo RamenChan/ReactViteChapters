@@ -4,13 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Container from './Container'
 import Product from './product'
-import Header from './Header'
+import Header from './Home/Header'
 import Body from './Body'
 import Footer from './Footer'
 import Example from './onePage'
-import Banner from './Banner'
-import Banner2 from './Banner2'
-import Category from './Category'
+import Banner from './Home/Banner'
+import Banner2 from './Home/Banner2'
+import Category from './Home/Category'
 function App() {
 
   return (

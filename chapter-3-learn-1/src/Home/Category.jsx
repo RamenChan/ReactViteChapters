@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Category.css"
-import arrow from "./image/Arrow`s.png"
-import phones from "./image/phones.png"
-import watch from "./image/watch.png"
-import camera from "./image/camera.png"
-import headphones from "./image/headphones.png"
-import computers from "./image/computers.png"
-import gaming from "./image/gaming.png"
+import arrow from "../image/Arrow`s.png"
+import phones from "../image/phones.png"
+import watch from "../image/watch.png"
+import camera from "../image/camera.png"
+import headphones from "../image/headphones.png"
+import computers from "../image/computers.png"
+import gaming from "../image/gaming.png"
 
 
 function Category() {
