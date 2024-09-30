@@ -1,22 +1,27 @@
 import React from 'react'
+import './Header.css'
+import Logo from "./image/Logo.png"
+import cart from "./image/Favorites.png"
+import favorites from "./image/Cart1.png"
+import user from "./image/User.png"
+
+
 
 function Header() {
   return (
-    <div>
-        <header style={{
-      backgroundColor: '#4CAF50',
-      padding: '10px',
-      textAlign: 'center',
-      width: '100%',
-      height: '80px',
-      boxSizing: 'border-box',
-      margin: '0',
-      position: 'fixed',
-      top: '0',
-      left: '0'
-    }}>
-      <h3>Header Bölümü</h3>
-    </header>
+
+    <div className='header'>
+      <img className='logo' src={Logo}/>
+      <input type="text" className='input'  placeholder='Search'/>
+      <a href="#" className='links' >Home</a>
+      <a href="#" className='links' >About</a>
+      <a href="#" className='links' >Contact Us</a>
+      <a href="#" className='links' >Blog</a>
+      <img className='cart' src= {cart}/>
+      <img className='cart' src= {favorites}/>
+      <img className='cart' src= {user}/>
+      
+
     </div>
   )
 }

@@ -12,13 +12,7 @@ function App() {
 
   return (
     <div>
-        {/* <Container>
-          <Product />
-        </Container>         */}
-        {/* <Header />
-        <Body />
-        <Footer /> */}
-        <Example/>
+        <Header/>
     </div>
   )
 }

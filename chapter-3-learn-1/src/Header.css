@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    height: 88px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    border-bottom: 1px solid #B5B5B5
+}
+
+.logo {
+    padding-left: 160px;
+    padding-top: 32.56px;
+}
+
+.input {
+    background-image:url("./image/Search.png");
+    background-repeat:no-repeat;
+    width: 372px;
+    height: 56px;
+    margin-left: 63px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    border: 0px;
+    opacity: 0px;
+}
+.links{
+    margin-left: 63px;
+    color: #000000;
+}
+.cart{
+    margin-left: 30px;
+}
