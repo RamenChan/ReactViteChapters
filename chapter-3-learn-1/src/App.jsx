@@ -9,12 +9,14 @@ import Body from './Body'
 import Footer from './Footer'
 import Example from './onePage'
 import Banner from './Banner'
+import Banner2 from './Banner2'
 function App() {
 
   return (
     <div className='container'>
         <Header/>
         <Banner/>
+        <Banner2/>
     </div>
   )
 }

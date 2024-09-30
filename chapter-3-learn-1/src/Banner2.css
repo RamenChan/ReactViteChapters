@@ -1,0 +1,86 @@
+.banner2{
+    width: 100%;
+    height: 600px;
+    background-color: red;
+    position: absolute;
+    top: 722px;
+    display: flex;
+    flex-direction: row;
+}
+.leftbanner2{
+    width: 50%;
+    height: 600px;
+    background-color: red;
+
+}
+.playstation{
+    height: 328px;
+    background-color: white;
+    display: flex;
+}
+.apple{
+    height: 272px;
+    background-color: grey;
+}
+
+.playstation h2{
+    font-family: SF Pro Display;
+font-size: 49px;
+font-weight: 500;
+line-height: 40px;
+margin-bottom: 20px;
+text-align: left;
+    color: black;
+}
+.playstation h1{
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 0px;
+    color: #909090;
+}
+.playstation-text{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+text-align: center;
+margin-left: 50px;
+}
+.macbook{
+    width: 50%;
+    height: auto;
+    background-color: #EDEDED;
+display: flex;
+}
+.macbook h2{
+    font-family: SF Pro Display;
+font-size: 64px;
+font-weight: 200;
+line-height: 56px;
+text-align: left;
+color: black;
+margin-bottom: 10px;
+
+}
+.macbook h1{
+    font-family: SF Pro Display;
+font-size: 14px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color:  #909090;
+
+}
+.macbook img{
+    margin-left: auto;
+    max-height: 80%;
+    margin-top: 60px
+}
+.macbook button{
+    width: 184px;
+    background-color: #EDEDED;
+    color: black;
+    border: 2px solid black;
+}
