@@ -4,8 +4,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 10px;
-    border-bottom: 1px solid #B5B5B5
+    border-bottom: 1px solid #B5B5B5;
+
 }
 
 .logo {
@@ -16,18 +16,31 @@
 .input {
     background-image:url("./image/Search.png");
     background-repeat:no-repeat;
+    background-position: left;
     width: 372px;
     height: 56px;
-    margin-left: 63px;
+    margin-left: 100px;
     background-color: #F5F5F5;
     border-radius: 8px;
     border: 0px;
     opacity: 0px;
 }
 .links{
-    margin-left: 63px;
+    margin-left: 100px;
     color: #000000;
 }
 .cart{
-    margin-left: 30px;
+    margin-left: 200px;
+    position: relative;
+    top: 10px;
+}
+.favorites{
+    margin-left: 60px;
+    position: relative;
+    top: 10px;
+}
+.user{
+    margin-left: 60px;
+    position: relative;
+    top: 10px;
 }

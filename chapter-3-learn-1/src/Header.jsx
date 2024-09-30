@@ -12,14 +12,14 @@ function Header() {
 
     <div className='header'>
       <img className='logo' src={Logo}/>
-      <input type="text" className='input'  placeholder='Search'/>
+      <input type="text" className='input'  placeholder='      Search'/>
       <a href="#" className='links' >Home</a>
       <a href="#" className='links' >About</a>
       <a href="#" className='links' >Contact Us</a>
       <a href="#" className='links' >Blog</a>
       <img className='cart' src= {cart}/>
-      <img className='cart' src= {favorites}/>
-      <img className='cart' src= {user}/>
+      <img className='favorites' src= {favorites}/>
+      <img className='user' src= {user}/>
       
 
     </div>
