@@ -8,11 +8,13 @@ import Header from './Header'
 import Body from './Body'
 import Footer from './Footer'
 import Example from './onePage'
+import Banner from './Banner'
 function App() {
 
   return (
-    <div>
+    <div className='container'>
         <Header/>
+        <Banner/>
     </div>
   )
 }
