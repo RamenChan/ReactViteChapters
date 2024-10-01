@@ -1,9 +1,8 @@
-import React from 'react'
-import "./Products.css"
+import React from 'react';
+import './Trends.css';
 import { useEffect, useState } from "react";
 
-
-function Products() {
+function Trends() {
 
   const [products, setProducts] = useState([]);
   const adres = "https://fakestoreapi.com/products";
@@ -11,13 +10,18 @@ function Products() {
   useEffect(() => {
     fetch(adres)
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => {
+        // Gelen ürünleri rastgele sırala
+        const shuffledProducts = data.sort(() => Math.random() - 0.5);
+        // İlk 8 ürünü ayır
+        const selectedProducts = shuffledProducts.slice(0, 4);
+        setProducts(selectedProducts);
+      });
   }, []);
 
-
   return (
-    <div className='products'>
-      {products.slice(0, 8).map((p) =>
+    <div className='trends'>
+      {products.map((p) =>
         <div className="card" key={p.id}>
           <img src={p.image} alt={p.title} className="product-image" />
           <div className="memos">
@@ -25,11 +29,10 @@ function Products() {
             <p>Price: ${p.price}</p>
             <button>Buy Now</button>
           </div>
-
         </div>
       )}
     </div>
-  )
+  );
 }
 
-export default Products
+export default Trends;

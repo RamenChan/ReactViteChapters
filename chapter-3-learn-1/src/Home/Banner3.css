@@ -1,0 +1,8 @@
+.banner3{
+    position: absolute;
+    top: 3800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 400px;
+    color: tomato;
+}

@@ -1,0 +1,73 @@
+/* Trends.css */
+.trends {
+    position: absolute;
+    top: 3800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 400px;
+
+}
+
+.card {
+    margin-left: 16px;
+    width: 230px;
+    height: 432px;
+    background-color: #F6F6F6;
+    margin-bottom: 16px;
+}
+
+.product-image {
+    width: 160px;
+    height: 160px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.card h2 {
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: hidden;         /* Taşan kısmı gizler */
+    white-space: nowrap;      /* Metni tek satırda tutar */
+    text-overflow: ellipsis;  /* Taşan kısma '...' ekler */
+    max-width: 200px;         /* Maksimum genişlik ayarı */
+
+}
+
+.card p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+
+.card p:nth-of-type(2) {
+    font-weight: bold;
+    color: #000;
+}
+
+.card button {
+    width: 183px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #000000;
+    color: white;
+}
+
+.memos {
+    width: 236px;
+    height: 160px;
+    gap: 24px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
