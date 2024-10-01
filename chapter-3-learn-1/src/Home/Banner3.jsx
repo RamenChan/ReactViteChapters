@@ -9,20 +9,21 @@ import ok from "../image/ok.png"
 function Banner3() {
   return (
     <div className='banner3'>
-      <div clasName='left'>
-      < img className='ipad' src={ipad1} alt="" />
-      <img className='ipad2' src={ipad2} alt="" />
-      <img className='ok1' src={ok} alt="" />
+      <div className='left'>
+        <img className='ok' src={ok} alt="" />
+        <img className='ipad2' src={ipad2} alt="" />
+        <img className='ipad1' src={ipad1} alt="" />
       </div>
-      <div className='middle'></div>
+      <div className='middle'>
+            <p>Big Summer <b>Sale</b></p>
+            <h5>Commodo fames vitae vitae leo mauris in. Eu consequat.</h5>
+            <button>Shop Now</button>
+      </div>
       <div className='right'>
-        <img className='wach' src={wach} alt="" />
-        <img className='phone1' src={phone1} alt="" />
+        <img className='phone' src={phone1} alt="" />
+        <img className="watch" src={wach} alt="" />
+        </div>
       </div>
-   
-     
-    
-    </div>
   )
 }
 
