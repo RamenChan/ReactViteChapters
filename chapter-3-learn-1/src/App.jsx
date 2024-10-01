@@ -7,6 +7,8 @@ import Banner from './Home/Banner'
 import Banner2 from './Home/Banner2'
 import Category from './Home/Category'
 import Products from './Home/Products'
+import Banners from './Home/Banners'
+
 function App() {
 
   
@@ -18,6 +20,8 @@ function App() {
         <Banner2/>
         <Category/>
         <Products/>
+        <Banners/>
+
       
     </div>
   )
