@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-left: 400px;
+    margin-bottom: 100px;
 
 }
 
@@ -69,5 +70,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+.text p{
 
 }

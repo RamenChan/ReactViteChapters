@@ -10,6 +10,7 @@ import Products from './Home/Products'
 import Banners from './Home/Banners'
 import Trends from './Home/Trends'
 import Banner3 from './Home/Banner3'
+import Footer from './Home/Footer'
 function App() {
 
   
@@ -24,6 +25,7 @@ function App() {
         <Banners/>
         <Trends/>
         <Banner3/>
+        <Footer/>
     </div>
   )
 }
