@@ -1,20 +1,19 @@
 /* Products.css */
 .products {
-
     position: absolute;
     top: 2000px;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-left: 100px;
+    margin-left: 400px;
+
 }
 
 .card {
+    margin-left: 16px;
     width: 230px;
     height: 432px;
     background-color: #F6F6F6;
-    margin-bottom: 50px;
-
+    margin-bottom: 16px;
 }
 
 .product-image {
@@ -32,6 +31,10 @@
     text-align: center;
     margin-bottom: 0px;
     margin-top: 0px;
+    overflow: hidden;         /* Taşan kısmı gizler */
+    white-space: nowrap;      /* Metni tek satırda tutar */
+    text-overflow: ellipsis;  /* Taşan kısma '...' ekler */
+    max-width: 200px;         /* Maksimum genişlik ayarı */
 
 }
 
@@ -40,6 +43,7 @@
     color: #333;
     margin-bottom: 0px;
     margin-top: 0px;
+    
 }
 
 .card p:nth-of-type(2) {
@@ -56,8 +60,8 @@
 }
 
 .memos {
-    width: Fill (236px)px;
-    height: Hug (160px)px;
+    width: 236px;
+    height: 160px;
     gap: 24px;
     opacity: 0px;
     display: flex;
