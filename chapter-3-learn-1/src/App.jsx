@@ -1,18 +1,25 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Container from './Container'
-import Product from './product'
-import Header from './Header'
-import Body from './Body'
-import Footer from './Footer'
-import Example from './onePage'
+import Home from "./Home/Home.jsx"
+import Header from './Common/Header.jsx'
+import Footer from './Common/Footer'
+import { Routes, Route } from 'react-router-dom'
+import ProductPage from './ProductPage/ProductPage.jsx'
+
 function App() {
 
+
+
   return (
-    <div>        
-        <Example />
+    <div className='container'>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/products' element={<ProductPage />}></Route>
+      </Routes>
+      <Footer />
     </div>
   )
 }

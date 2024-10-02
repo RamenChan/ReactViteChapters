@@ -1,0 +1,88 @@
+.banner3{
+    width: 100%;
+    height: 500px;
+    color: white;
+    background: linear-gradient(100.23deg, #2E2E2E 42.36%, #000000 98.65%);
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.ok{
+    width: 338px;
+    height: 116px;
+    margin-left: 223px;
+}
+.ipad2{
+    width: 237px;
+    height: 192px;
+    position: relative;
+    bottom: 70px;
+    margin-left: 39px;
+}
+.ipad1{
+    width: 345px;
+    height: 262px;
+    bottom: 75px;
+    position: relative;
+}
+.middle{
+    width: 525px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 125px;
+
+
+}
+.middle p{
+    font-family: SF Pro Display;
+    font-size: 72px;
+    font-weight: 200;
+    line-height: 72px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+.middle h5{
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 10px;
+    color: #787878;
+}
+.middle button{
+    width: 184px;
+    height: 56px;
+    border-radius: 6px;
+    border: 1px solid #FFFFFF;
+    background-color: #2E2E2E;
+    color: white;
+    
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+.phone{
+    position: relative;
+    max-width: 300px;
+    margin-left: auto;
+}
+.watch{
+    position: relative;
+    max-width: 390px;
+    margin-left: auto;
+    bottom: 70px;
+} 

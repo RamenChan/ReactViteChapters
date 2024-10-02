@@ -81,3 +81,16 @@ Repository'ye katkıda bulunmak isterseniz, şu adımları takip edebilirsiniz:
    git commit -m "Yeni özellik eklendi"
    ```
 4. **Pull Request** gönderin.
+
+
+##Yazarlar
+
+Bekiralp Zengin
+
+Kemal özcan
+
+Abdi Yıldızoğlu
+
+Umut Nuri Uğur
+
+Mehmet Görünmek
