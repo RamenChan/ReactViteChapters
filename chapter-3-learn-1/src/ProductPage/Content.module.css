@@ -1,0 +1,17 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1560px;
+}
+
+.filters {
+    width: 30%;
+    background-color: beige;
+    margin-left: 40px;
+}
+
+.products {
+    width: 70%;
+    background-color: aqua;
+}

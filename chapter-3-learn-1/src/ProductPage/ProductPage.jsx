@@ -1,9 +1,10 @@
 import React from 'react'
+import Content from './Content'
 
 function ProductPage() {
   return (
     <div>
-      Burası Ürün Sayfası
+        <Content />
     </div>
   )
 }
