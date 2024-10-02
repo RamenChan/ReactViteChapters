@@ -6,7 +6,6 @@ import Products from './Products'
 import Banners from './Banners'
 import Trends from './Trends'
 import Banner3 from './Banner3'
-import Footer from './Footer'
 
 function Home() {
     return (
@@ -18,7 +17,6 @@ function Home() {
             <Banners />
             <Trends />
             <Banner3 />
-            <Footer />
         </div>
     )
 }
