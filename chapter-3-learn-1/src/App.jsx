@@ -1,31 +1,25 @@
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './Home/Header'
-import Banner from './Home/Banner'
-import Banner2 from './Home/Banner2'
-import Category from './Home/Category'
-import Products from './Home/Products'
-import Banners from './Home/Banners'
-import Trends from './Home/Trends'
-import Banner3 from './Home/Banner3'
-import Footer from './Home/Footer'
+import Home from "./Home/Home.jsx"
+import Header from './Home/Header.jsx'
+import { Routes, Route } from 'react-router-dom'
+import ProductPage from './ProductPage/ProductPage.jsx'
+
 function App() {
 
-  
+
 
   return (
     <div className='container'>
-        <Header/>
-        <Banner/>
-        <Banner2/>
-        <Category/>
-        <Products/>
-        <Banners/>
-        <Trends/>
-        <Banner3/>
-        <Footer/>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/products' element={<ProductPage />}></Route>
+      </Routes>
+      
+
     </div>
   )
 }
