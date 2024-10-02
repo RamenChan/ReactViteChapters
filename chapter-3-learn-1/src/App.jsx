@@ -11,14 +11,8 @@ import Example from './onePage'
 function App() {
 
   return (
-    <div>
-        {/* <Container>
-          <Product />
-        </Container>         */}
-        {/* <Header />
-        <Body />
-        <Footer /> */}
-        <Example/>
+    <div>        
+        <Example />
     </div>
   )
 }
