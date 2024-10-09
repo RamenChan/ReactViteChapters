@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-import "./ProductDetail.css"
+import styles from './ProductDetail.module.css';
 
 
 function ProductDetail() {
@@ -20,15 +20,15 @@ function ProductDetail() {
     }
 
     return (
-        <div className='product-detail'>
-            <img src={product.image} className='product-image' />
-            <div className='product-info'>
+        <div className={`${styles.product_detail}`}>
+            <img src={product.image} className={`${styles.product_image}`} />
+            <div className={`${styles.product_info}`}>
                 <h1>{product.title}</h1>
                 <p>Price: ${product.price}</p>
                 <p>{product.description}</p>
-                <div className='product-button'>
-                    <button className='wishlist-button'>Add To Wishlist</button>
-                    <button className='cart-button'>Add To Cart</button>
+                <div className={`${styles.product_button}`}>
+                    <button className={`${styles.wishlist_button}`}>Add To Wishlist</button>
+                    <button className={`${styles.cart_button}`}>Add To Cart</button>
                 </div>
 
             </div>
