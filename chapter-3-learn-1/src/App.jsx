@@ -7,10 +7,11 @@ import Header from './Common/Header.jsx'
 import Footer from './Common/Footer'
 import { Routes, Route } from 'react-router-dom'
 import ProductPage from './ProductPage/ProductPage.jsx'
+import ProductDetail from './ProductDetail.jsx'
 
 function App() {
 
-
+  
 
   return (
     <div className='container'>
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/products' element={<ProductPage />}></Route>
+        <Route path='/products/:productID' element={<ProductDetail/>}></Route>
       </Routes>
       <Footer />
     </div>

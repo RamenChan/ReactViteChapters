@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Content.module.css';
+import { useNavigate,useParams } from 'react-router-dom';
 
 function Content() {
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState('');
+    const navigate = useNavigate();
 
     // Kategorileri çek
     useEffect(() => {
@@ -50,7 +52,7 @@ function Content() {
                             <div className={styles.memos}>
                                 <h2>{truncate(product.title, 20)}</h2>
                                 <p>Price: ${product.price}</p>
-                                <button>Buy Now</button>
+                                <button onClick={()=> navigate("/products/" + product.id)} >Buy Now</button>
                             </div>
                         </div>
                     ))
