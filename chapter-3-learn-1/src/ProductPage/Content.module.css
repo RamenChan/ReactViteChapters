@@ -3,12 +3,12 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 1560px;
+    margin-bottom: 50px;
 }
 
 .filters {
     width: 30%;
-    background-color: rgb(39, 39, 0);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     margin: 50px;
@@ -25,22 +25,17 @@
 .text {
     margin: 10px;
     padding: 10px 20px;
-    background-color: black;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-align: center;
-}
-
-.text:hover {
-    background-color: #2e2d2e;
+    text-align: left;
 }
 
 .card {
-    width: 150px;
+    width: 266px;
+    height: 432px;
     border: 1px solid #ddd;
+    background-color: #F6F6F6;
     border-radius: 10px;
     margin: 10px;
+    margin-top: 40px;
     padding: 15px;
     text-align: center;
     
@@ -49,13 +44,16 @@
 }
 .productImage {
     width: 100%;
-    height: auto;
+    height: 200px;
     max-width: 250px;
+    max-height: 250px;
+    margin-top: 50px;
     margin-bottom: 10px;
   }
 
 .memos {
-    text-align: left;
+    margin-top: 50px;
+    text-align: center;
   }
   
   .memos h2 {
@@ -67,3 +65,10 @@
     font-size: 16px;
     color: #555;
   }
+  .memos button {
+    width: 183px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #000000;
+    color: white;
+}
