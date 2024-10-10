@@ -41,25 +41,29 @@ function Content() {
 
     return (
         <div className={`${styles.content}`}>
-            <div className={`${styles.filters}`}>
-                <p className={`${styles.text}`}><b>Categories</b></p>
-                {categories.map((category) => (
-                    <div key={category}>
-                        <input
-                            type="radio"
-                            name="radio"
-                            onClick={() => setSelectedCategory(category)}
-                            className={`${styles.text}`}
-                        />
-                        <b>{category}</b>
-                    </div>
-                ))}
-                <input
-                            type="radio"
-                            name="radio"
-                            onClick={() => setClearCathegory(category)}
-                            className={`${styles.text}`}/><b>all</b>
-                </div>
+  <div className={`${styles.filters}`}>
+    <p className={`${styles.text}`}><b>Categories</b></p>
+    {categories.map((category) => (
+      <div key={category}>
+        <input
+          type="radio"
+          name="radio"
+          onClick={() => setSelectedCategory(category)}
+          className={`${styles.text}`}
+        />
+        <b>{category}</b>
+      </div>
+    ))}
+    <div>
+      <input
+        type="radio"
+        name="radio"
+        onClick={() => setClearCathegory('all')}
+        className={`${styles.text}`}
+      />
+      <b>all</b>
+    </div>
+  </div>
 
             <div className={`${styles.products}`}>
                 {productsFiltered.length > 0 ? (
