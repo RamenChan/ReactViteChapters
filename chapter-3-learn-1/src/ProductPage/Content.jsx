@@ -48,7 +48,7 @@ function Content() {
         <input
           type="radio"
           name="radio"
-          onClick={() => setSelectedCategory(category)}
+          onClick={() => setSelectedCategory('all')}
           className={`${styles.text}`}
         />
         <b>{category}</b>
