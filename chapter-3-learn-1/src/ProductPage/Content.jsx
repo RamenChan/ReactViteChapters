@@ -54,8 +54,12 @@ function Content() {
                         <b>{category}</b>
                     </div>
                 ))}
-                <button >clear</button>
-            </div>
+                <input
+                            type="radio"
+                            name="radio"
+                            onClick={() => setClearCathegory(category)}
+                            className={`${styles.text}`}/><b>all</b>
+                </div>
 
             <div className={`${styles.products}`}>
                 {productsFiltered.length > 0 ? (
