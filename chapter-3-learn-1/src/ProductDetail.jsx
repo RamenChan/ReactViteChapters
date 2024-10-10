@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import styles from './ProductDetail.module.css';
 
 
-function ProductDetail() {
+function ProductDetail({shoppingCart}) {
 
     const [product, setProduct] = useState(null);
     const { productID } = useParams();
@@ -19,6 +19,10 @@ function ProductDetail() {
         return <div>Loading...</div>; // Ürün verisi yüklenirken gösterilecek
     }
 
+    const handleClick = () =>{
+        shoppingCart(product.id);
+    }
+
     return (
         <div className={`${styles.product_detail}`}>
             <img src={product.image} className={`${styles.product_image}`} />
@@ -28,7 +32,7 @@ function ProductDetail() {
                 <p>{product.description}</p>
                 <div className={`${styles.product_button}`}>
                     <button className={`${styles.wishlist_button}`}>Add To Wishlist</button>
-                    <button className={`${styles.cart_button}`}>Add To Cart</button>
+                    <button  onClick={handleClick} className={`${styles.cart_button}`}>Add To Cart</button>
                 </div>
 
             </div>

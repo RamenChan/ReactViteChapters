@@ -1,6 +1,3 @@
-import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Home from "./Home/Home.jsx"
 import Header from './Common/Header.jsx'
@@ -8,9 +5,25 @@ import Footer from './Common/Footer'
 import { Routes, Route } from 'react-router-dom'
 import ProductPage from './ProductPage/ProductPage.jsx'
 import ProductDetail from './ProductDetail.jsx'
+import axios from 'axios'
+import { useState } from 'react'
 
 function App() {
 
+
+  const [product,setProduct] = useState([]);
+
+  const addCart = async (id) =>{
+    
+    const response = await axios.post("http://localhost:3000/products",{
+      id,
+      quantity:1
+    })
+    const cartProduct = [
+      ...product,response.data
+    ];
+    setProduct(cartProduct);
+  }
   
 
   return (
@@ -19,7 +32,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/products' element={<ProductPage />}></Route>
-        <Route path='/products/:productID' element={<ProductDetail/>}></Route>
+        <Route path='/products/:productID' element={<ProductDetail shoppingCart={addCart} />}></Route>
       </Routes>
       <Footer />
     </div>
