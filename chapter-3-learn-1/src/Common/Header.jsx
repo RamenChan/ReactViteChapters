@@ -4,12 +4,12 @@ import Logo from "../image/Logo.png"
 import cart from "../image/Cart1.png"
 import favorites from "../image/Favorites.png"
 import user from "../image/User.png"
-import { NavLink } from 'react-router-dom'
-
-
+import { NavLink, useNavigate } from 'react-router-dom'
 
 
 function Header() {
+
+  let navigate = useNavigate();
   return (
 
     <div className='header'>
@@ -19,7 +19,7 @@ function Header() {
       <NavLink className='links' to="/products">Product Page</NavLink>
       <a href="#" className='links' >Contact Us</a>
       <a href="#" className='links' >Blog</a>
-      <button className='cart' onClick={() => navigate("/products/" + productt.id)}>
+      <button className='cart' onClick={() => navigate("/cart")}>
         <img src={cart} />
       </button>
 

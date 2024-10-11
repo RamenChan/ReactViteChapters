@@ -7,6 +7,7 @@ import ProductPage from './ProductPage/ProductPage.jsx'
 import ProductDetail from './ProductDetail.jsx'
 import axios from 'axios'
 import { useState } from 'react'
+import ShoppingCart from './ShoppingCart/ShoppingCart.jsx'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/products' element={<ProductPage />}></Route>
         <Route path='/products/:productID' element={<ProductDetail shoppingCart={addCart} />}></Route>
+        <Route path='/cart' element = {<ShoppingCart/>} ></Route>
       </Routes>
       <Footer />
     </div>
