@@ -4,7 +4,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 function Content() {
     const [categories, setCategories] = useState([]);
-
     const [products, setProducts] = useState([]);
     const [productsFiltered, setProductsFiltered] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState('');
@@ -26,14 +25,15 @@ function Content() {
 
     // Seçilen kategoriye göre ürünleri çek
     useEffect(() => {
-        if (selectedCategory) {
+        if (selectedCategory === 'all') {
+            setProductsFiltered(products); // Tüm ürünleri göster
+        } else if (selectedCategory) {
             fetch(`https://fakestoreapi.com/products/category/${selectedCategory}`)
                 .then(res => res.json())
                 .then((data) => setProductsFiltered(data));
         }
-    }, [selectedCategory]);
-    
-   
+    }, [selectedCategory, products]);
+
     // Metni kısaltan fonksiyon
     function truncate(text, maxLength) {
         return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
@@ -41,29 +41,31 @@ function Content() {
 
     return (
         <div className={`${styles.content}`}>
-  <div className={`${styles.filters}`}>
-    <p className={`${styles.text}`}><b>Categories</b></p>
-    {categories.map((category) => (
-      <div key={category}>
-        <input
-          type="radio"
-          name="radio"
-          onClick={() => setSelectedCategory('all')}
-          className={`${styles.text}`}
-        />
-        <b>{category}</b>
-      </div>
-    ))}
-    <div>
-      <input
-        type="radio"
-        name="radio"
-        onClick={() => setClearCathegory('all')}
-        className={`${styles.text}`}
-      />
-      <b>all</b>
-    </div>
-  </div>
+            <div className={`${styles.filters}`}>
+                <p className={`${styles.text}`}><b>Categories</b></p>
+                {categories.map((category) => (
+                    <div key={category}>
+                        <input
+                            type="radio"
+                            name="radio"
+                            onClick={() => setSelectedCategory(category)}
+                            className={`${styles.text}`}
+                        />
+                        <b>{category}</b>
+                    </div>
+                ))}
+                <div>
+                    <input
+                        type="radio"
+                        name="radio"
+                        defaultChecked
+                        onClick={() => setSelectedCategory('all')}
+                        className={`${styles.text}`}
+                        
+                    />
+                    <b>all</b>
+                </div>
+            </div>
 
             <div className={`${styles.products}`}>
                 {productsFiltered.length > 0 ? (
@@ -87,8 +89,8 @@ function Content() {
                                 <button onClick={() => navigate("/products/" + productt.id)} >Buy Now</button>
                             </div>
                         </div>
-                    )
-                ))}
+                    ))
+                )}
             </div>
         </div>
     );
