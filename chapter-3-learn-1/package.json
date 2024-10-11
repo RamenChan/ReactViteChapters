@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "server": "json-server --watch api/db.json --port 3001",
-    "start:dev": "concurrently \"npm run dev\" \"npm run server\""
+    "start": "concurrently \"npm run dev\" \"npm run server\""
   },
   "dependencies": {
     "@headlessui/react": "^2.1.8",

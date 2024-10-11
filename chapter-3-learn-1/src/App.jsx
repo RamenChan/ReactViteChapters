@@ -15,10 +15,11 @@ function App() {
 
   const addCart = async (id) =>{
     
-    const response = await axios.post("http://localhost:3000/products",{
+    const response = await axios.post("http://localhost:3001/products",{
       id,
       quantity:1
     })
+    console.log(response)
     const cartProduct = [
       ...product,response.data
     ];

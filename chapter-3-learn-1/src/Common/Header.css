@@ -11,8 +11,8 @@
 }
 
 .input {
-    background-image:url("./image/Search.png");
-    background-repeat:no-repeat;
+    background-image: url("./image/Search.png");
+    background-repeat: no-repeat;
     background-position: left;
     width: 372px;
     height: 56px;
@@ -22,26 +22,42 @@
     border: 0px;
     opacity: 0px;
 }
-.links{
+
+.links {
     margin-left: 100px;
     color: #000000;
     text-decoration: none;
 }
-.links.active{
+
+.links.active {
     color: blue;
     font-size: 20px;
 }
-.cart{
+
+.cart {
     margin-left: 200px;
     position: relative;
     top: 10px;
+    outline: none;
+    background-color: white;
 }
-.favorites{
+
+.cart:hover{
+    border-color: white;
+}
+
+.cart:focus,
+.cart:focus-visible {
+    outline: none;
+}
+
+.favorites {
     margin-left: 60px;
     position: relative;
     top: 10px;
 }
-.user{
+
+.user {
     margin-left: 60px;
     position: relative;
     top: 10px;
