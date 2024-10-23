@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 import { useState,useEffect } from 'react';
+import styles from './ShoppingList.module.css';
 
 function ShoppingList() {
 
@@ -44,7 +45,14 @@ function ShoppingList() {
             <h1>Product Details</h1>
             <ul>
                 {productDetails.map((product, index) => (
-                    <li key={index}>{product.title}</li>
+                    <div className={styles.items} key={index}>
+                        <img src={product.image} alt="" />
+                        {product.title}
+                        <button>-</button>
+                        {1}
+                        <button>+</button>
+                        {product.price}
+                        </div>
                 ))}
             </ul>
         </div>

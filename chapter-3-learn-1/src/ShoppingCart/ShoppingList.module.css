@@ -1,0 +1,17 @@
+.items{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.items img{
+    height: 90px;
+    width: 90px;
+    margin-right: 20px;
+}
+.items button{
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+}
